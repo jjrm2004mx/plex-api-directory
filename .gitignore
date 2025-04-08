@@ -1,4 +1,6 @@
-HELP.md
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/rosalesjj_GHCO/plex-api-directory'HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
