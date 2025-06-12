@@ -1,0 +1,24 @@
+/* tailwind.config.js (asegúrate de habilitar box-reflect si lo quieres usar directamente)
+   Tailwind no tiene soporte directo, pero puedes usar estilos globales:
+*/
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agrega esto manualmente */
+.reflection {
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}

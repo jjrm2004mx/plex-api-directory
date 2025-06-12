@@ -1,0 +1,24 @@
+# docker-compose.yml para levantar backend y frontend juntos
+# version: '3.8'
+
+services:
+  backend:
+    build:
+      #context: ./backend
+      context: ./src/main/java/com/globalhitss/tijuana/plex/api_directory/backend
+    ports:
+      - "8081:8080"
+    networks:
+      - apinetwork 
+
+  frontend:
+    build:
+      context: ./src/main/java/com/globalhitss/tijuana/plex/api_directory/frontend
+    ports:
+      - "3000:80"
+    networks:
+      - apinetwork
+
+networks:
+  apinetwork:
+    driver: bridge
